@@ -1,4 +1,4 @@
-const Receipt = require('./receipt.js')
+// const Receipt = require('./receipt.js')
 
 class Checkout {
   constructor(items) {
@@ -10,11 +10,9 @@ class Checkout {
     return this.items.reduce((a, b) => a + b.price, 0)
   }
 
-  printReceipt(receiptObj) {
-    // Move the pointer to the dependency from the function body to outside the class or as a default method argument
-    // const receipt = new Receipt(this.total())
-
-    return receiptObj.print();
+  printReceipt(receiptClass) {
+    const receipt = new receiptClass(this.total())
+    return receipt.print();
   }
 }
 // old code

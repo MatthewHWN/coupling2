@@ -1,4 +1,4 @@
-const Receipt = require('./receipt.js')
+// const Receipt = require('./receipt.js')
 
 class Checkout {
   constructor(items) {
@@ -9,8 +9,8 @@ class Checkout {
     return this.items.reduce((a, b) => a + b.price, 0)
   }
 
-  printReceipt(receiptClass) {
-    const receipt = new receiptClass(this.total())
+  printReceipt(gary) {
+    const receipt = new gary(this.total())
     return receipt.print()
   }
 }
