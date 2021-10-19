@@ -15,6 +15,7 @@ describe('Checkout', function () {
       { price: 2 },
       { price: 2 },
     ]
+    
     checkout = new Checkout(items);
 
   })

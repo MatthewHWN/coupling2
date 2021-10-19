@@ -4,10 +4,10 @@ class ReceiptClassDouble {
   print() { return "a receipt" }
 }
 
-describe('Checkout', function() {
+describe('Checkout', function () {
   let items, checkout
 
-  beforeEach(function() {
+  beforeEach(function () {
     items = [
       { price: 1 },
       { price: 2 },
@@ -16,14 +16,14 @@ describe('Checkout', function() {
     checkout = new Checkout(items)
   })
 
-  describe('total()', function() {
-    it('returns items total', function() {
+  describe('total()', function () {
+    it('returns items total', function () {
       expect(checkout.total()).toEqual(5)
     })
   })
 
-  describe('printReceipt()', function() {
-    it('returns items total', function() {
+  describe('printReceipt()', function () {
+    it('returns items total', function () {
       expect(checkout.printReceipt(ReceiptClassDouble)).toEqual("a receipt")
     })
   })
