@@ -1,14 +1,14 @@
 const Receipt = require('../src/receipt.js')
 
-describe('Receipt', function() {
+describe('Receipt', function () {
   let receipt
 
-  beforeEach(function() {
+  beforeEach(function () {
     receipt = new Receipt(4)
   })
 
-  describe('print()', function() {
-    it('returns receipt statement', function() {
+  describe('print()', function () {
+    it('returns receipt statement', function () {
       expect(receipt.print()).toEqual('Your total is 4. Thanks for shopping!')
     })
   })

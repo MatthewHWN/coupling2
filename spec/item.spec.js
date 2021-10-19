@@ -1,14 +1,14 @@
 const Item = require('../src/item.js')
 
-describe('Item', function() {
+describe('Item', function () {
   let item
 
-  beforeEach(function() {
+  beforeEach(function () {
     item = new Item(2)
   })
 
-  describe('properties', function() {
-    it('has a price', function() {
+  describe('properties', function () {
+    it('has a price', function () {
       expect(item.price).toEqual(2)
     })
   })
