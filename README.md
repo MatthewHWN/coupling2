@@ -1,7 +1,7 @@
 # Coupling 2
 
 > a loosely coupled system is one in which each of its components has, or makes use of, little or no knowledge of the definitions of other separate components.
-
+hello
 
 ### Learning Objectives
 - Refactor code to go from tight coupling to loose coupling.
